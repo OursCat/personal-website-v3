@@ -1,0 +1,12 @@
+footer {
+	min-height: 10vh;
+	background-color: rgb(21, 67, 83);
+	.footer {
+		width: 90%;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		color: white;
+	}
+}

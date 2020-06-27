@@ -1,0 +1,43 @@
+main {
+	width: 90%;
+	min-height: 90vh;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	.project {
+		margin: 5rem 0;
+		flex: 1 1 40rem;
+		h1 {
+			font-size: 3rem;
+			margin: 2rem;
+		}
+	}
+	img {
+		width: 80%;
+		height: 60%;
+		border-radius: 1.5rem;
+		object-fit: cover;
+	}
+}
+.project-button {
+	display: flex;
+	justify-content: space-around;
+}
+.project-button button {
+	background-color: #154353;
+	border: none;
+	border-radius: 0.5rem;
+	margin-top: 1rem;
+	&:hover {
+		background-color: #385e6b;
+	}
+}
+.project-button a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 2rem;
+	padding: 1rem 2rem;
+}

@@ -1,0 +1,95 @@
+section {
+	width: 90%;
+	min-height: 90vh;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	.intro-left {
+		flex: 1 1 40rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		h1 {
+			padding-top: 2rem;
+			font-size: 6.8rem;
+			background: linear-gradient(rgb(56, 211, 159), rgb(56, 164, 211));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		h2 {
+			font-size: 5rem;
+			padding: 2rem 0;
+		}
+		p {
+			font-size: 2.2rem;
+		}
+		.social-icons {
+			margin-top: 2.4rem;
+			img {
+				cursor: pointer;
+				margin-right: 4.5rem;
+			}
+		}
+	}
+	.intro-right {
+		position: relative;
+		flex: 1 1 40rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		svg {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		#clock {
+			transform-origin: bottom;
+			transform-box: fill-box;
+			animation: clock-spin 2s infinite linear;
+		}
+		#plant-left {
+			animation: plants 1.5s infinite linear alternate;
+		}
+		#plant-right {
+			animation: plants 1.5s infinite linear alternate 0.5s;
+		}
+		#me {
+			animation: me 2s infinite ease-in-out alternate;
+			transform-origin: bottom;
+		}
+		img {
+			position: absolute;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			transform: translateX(15rem);
+		}
+	}
+}
+
+@keyframes clock-spin {
+	form {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes me {
+	from {
+		transform: rotateZ(-3deg);
+	}
+	to {
+		transform: rotateZ(3deg);
+	}
+}
+
+@keyframes plants {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(-20rem);
+	}
+}
